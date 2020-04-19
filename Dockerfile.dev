@@ -2,6 +2,7 @@ FROM node:alpine
 
 WORKDIR '/app'
 
+RUN npm cache clean -f
 COPY package.json .
 RUN npm install
 
